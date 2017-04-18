@@ -48,6 +48,83 @@ header nav a:hover{
 	color:#fff;
 	border-top: dashed 2px #FFF305;
 }
-main aside{
 
-} 
+section.galeria{
+	width: 90%;
+	margin: 0 auto;
+	background: #fff;
+}
+
+section.galeria{
+	padding: 0.3em 0.7em;
+}
+
+/*Para adaptar a la pantalla etiquetas con img*/
+section.galeria img{
+	width: 100%;
+}
+
+
+section#content img{
+	width: 80%;
+	border: 1px #ccc solid;
+	padding: 3px;
+}
+
+/*Border-radius // Borde redondeado
+Opacidad -> opacity*/
+.imgmodulos{
+	border-radius: 4em;
+	width: 90%;
+	box-shadow: 3px 3px 4px #333; 
+}
+main{
+	width: 90%;
+	margin: 0 auto;
+	background: #fff;
+}
+
+/**
+Primero ubicar en bloques tanto el section como aside
+despues establecer el ancho de estos
+*/
+main aside, main section{
+	display: inline-block;
+	vertical-align: top;
+}
+
+main aside{
+	width: 25%;
+	margin: 0.5em 0.5em;
+}
+
+/**Llamar a clase ., Pueden haber varias clases con el mismo name*/
+main section.contenedor{
+	width: 70%;
+}
+/**Llamar a id #, unico*/
+main section#content{
+	background: #f2f2f2;
+}
+
+
+
+
+
+footer {
+	width: 100% ;
+	background: #000;
+	color: #686666;
+	text-align: center;
+	padding: 2em 0;
+}
+
+footer a{
+	color: #FCFC04;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: #fff;
+	text-decoration: none;
+}
