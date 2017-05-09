@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto 2 Formularios</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+</head>
+<body>
+	<header>
+		<h1>Ingenieria de Software 2017</h1>
+	</header>
+	<nav>
+		<a href="../index.html">Home</a>
+		<a href="ponentes.html">Ponentes</a>
+		<a href="agenda.html">Agenda</a>
+		<a href="">Formulario</a>
+		<a href="contactos.html">Contactos</a>
+	</nav>
+	<main>
+		<section>
+			<h2>Ficha de Registro</h2>
+			<br>
+			<p>FIcha para registro de los participantes</p>
+			<form method="post" name="formularioregistro" 
+			action="">
+				<div class="datos">
+					<label for ="nombres">Nombres</label>
+					<input type="text" name="nombres"
+					placeholder="Ingrese sus Nombres" required="">
+				</div>
+				<div class="datos">
+					<label for ="apellidos">Apellidos</label>
+					<input type="text" name="apellidos"
+					placeholder="Ingreses sus Apellidos" required="">
+				</div>
+					<div class="datos">
+					<label for ="cedula">Cedula</label>
+					<input type="number" name="cedula"
+					placeholder="Ingrese su Identificacion" required="">
+				</div>
+				<div class="datos">
+					<label for ="email">Correo Electronico</label>
+					<input type="email" name="email"
+					placeholder="Ingrese su email">
+				</div>
+				<div class="datos">
+					<label for ="fechanacimiento">Fecha de Nacimiento</label>
+					<input type="date" name="fechadenacimiento">
+				</div>
+				<div class="datos">
+				<!--					<label for ="ciclo">Ciclo</label>
+					<input type="range" name="ciclo" min="1" max="10" >-->
+
+					<label for="ciclo">Ciclo: </label><input id="ciclo" type="number" min="1" max="10" step="1" value =""/>
+
+				</div>	
+				<div class="datos">
+					<label for ="tipoparticipante">Tipo de Participante</label><br>
+					<input type="radio" name="tipoparticipante"  value="1">Estudiante<br>
+					<input type="radio" name="tipoparticipante"  value="2">Docente<br>
+					<input type="radio" name="tipoparticipante"  value="3">Externo<br>
+				</div>	
+				<div class="datos">
+					<label for ="curso">Curso</label><br>
+					<select name ="curso">
+					  <option value=""></option>
+					  <option value="Android">Android</option>
+					  <option value="Python">Python</option>
+					</select>
+			    </div>
+			    <br>
+			    <input type="submit" name="Guardar"
+			    value="Guardar Datos" class="button">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<h6> DERECHOS RESERVADOS    ||   U T P L </h6>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	background: #333;
+	font-family: arial;
+}
+header, nav, main, footer{
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	background: #f3f3f3;
+}
+
+header h1{
+	padding: 1em 1em;
+	text-shadow: 3px 3px 4px #444;
+	color: blue;
+}
+nav{
+	background: #666;
+}
+nav a{
+	text-decoration: none;
+	padding: 0.3em 1em;
+	color: #f2f2f2
+}
+nav a:hover{
+	background: blue;
+	color: #f2f2f2
+}
+main section{
+	padding: 1em;
+}
+footer{
+	width: 100%;
+	text-align: center;
+	background: #000;
+	color: #666;
+	padding: 1em 0;
+}
+
+.datos label {
+	padding: 1em;
+	display: block;
+}
+
+.datos input{
+	padding: : 0.3em;
+	color: blue;
+	border-radius: 1px;
+	width: 50%;
+}
+
+.button {
+	border-radius: 1.5em;
+	background: : yellow;
+	border-color: blue;
+}
